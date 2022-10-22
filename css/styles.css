@@ -558,6 +558,10 @@ img {
   color: var(--text-color);
 }
 
+.lable-text {
+  margin: 0;
+}
+
 .inputs {
   display: flex;
   flex-direction: column;
@@ -566,6 +570,7 @@ img {
 
 .input-thumb {
   position: relative;
+  margin-bottom: 10px;
 }
 
 .modal-icon {
@@ -579,7 +584,7 @@ img {
 
 .input-field {
   position: relative;
-  margin-bottom: 10px;
+
   padding-left: 42px;
   width: 448px;
   height: 40px;
@@ -633,11 +638,18 @@ textarea::placeholder {
   align-items: center;
 }
 
+.checkbox-hidden-lable {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
 .checkbox-input {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   position: relative;
+  left: 8px;
   width: 16px;
   height: 15px;
 }
@@ -669,7 +681,7 @@ textarea::placeholder {
 
 .checkbox-text {
   margin: 0;
-
+  padding-left: 7px;
   font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
